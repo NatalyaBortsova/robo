@@ -1,0 +1,46 @@
+.order {
+@include image-set('../img/mask');
+
+  padding: 87px 0;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  background-position: bottom center;
+  background-size: cover;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 64px;
+  }
+
+  &__left {
+    grid-column: 5 span;
+    padding-left: 60px;
+  }
+
+  &__right {
+    grid-column: 7 span;
+    padding-right: 60px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    margin: 0 0 20px 0;
+  }
+
+  &__descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    margin: 0;
+  }
+
+  &__form {
+    max-width: 500px;
+    margin-left: auto;
+  }
+
+  
+}
